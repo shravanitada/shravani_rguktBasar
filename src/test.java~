@@ -1,0 +1,28 @@
+import java.util.*;
+public class test{
+      public static void main(String args[])
+      {
+            int a[]={1,2,3};
+            int b[];
+            b=a;
+            for(int i=0;i<b.length;i++)
+            {
+                  System.out.println(b[i]);
+            }
+            //System.out.println(a.length);
+           //if(a==null)
+            //System.out.println("hi");
+           //else
+            System.out.println("hello");
+            Calendar cal1 = new GregorianCalendar();
+            Calendar cal2 = new GregorianCalendar();
+
+            cal1.set(2017, 12, 1); 
+        cal2.set(2017, 12, 2);
+            System.out.println(test.daysBetween(cal1.getTime(),cal1.getTime()));
+            
+      }
+      public static int daysBetween(Date d1, Date d2){
+             return (int)( (d2.getTime() - d1.getTime()) / (1000 * 60 * 60 * 24));
+     }
+}
